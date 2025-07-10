@@ -9,6 +9,10 @@ add_library(CalcLib
         SimpleCalculator.h SimpleCalculator.cpp
         IHistory.h
         InMemoryHistory.h InMemoryHistory.cpp
+        OperationsTests.h OperationsTests.cpp
+        MockHistoryTests.h MockHistoryTests.cpp
+        
 )
-add_executable(test main.cpp)
-target_link_libraries(test gtest gmock pthread)
+     
+add_executable(Calc_tests main.cpp)
+target_link_libraries(Calc_tests CalcLib gtest gmock pthread)

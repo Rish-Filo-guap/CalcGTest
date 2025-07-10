@@ -21,6 +21,7 @@ public:
 
 private:
     void LogOperation(int a, const char* op, int b, int result);
+    void LogErrorOperation(int a, const char* op, int b, const char* error);
 
     IHistory& m_history;
 };
